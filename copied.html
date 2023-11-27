@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guestbook</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 1em;
+    }
+
+    section {
+      max-width: 600px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: white;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 20px;
+    }
+
+    label {
+      margin-bottom: 8px;
+    }
+
+    input, textarea {
+      padding: 10px;
+      margin-bottom: 15px;
+    }
+
+    button {
+      background-color: #333;
+      color: white;
+      padding: 10px;
+      cursor: pointer;
+      border: none;
+    }
+
+    button:hover {
+      background-color: #555;
+    }
+
+    .guest-entry {
+      border-bottom: 1px solid #ddd;
+      padding: 10px 0;
+    }
+
+    .guest-entry:last-child {
+      border-bottom: none;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Guestbook</h1>
+  </header>
+
+  <section>
+    <form id="guestForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <div id="guestList">
+      <!-- Guestbook entries will be displayed here -->
+    </div>
+  </section>
+
+  <script>
+    // In a real-world scenario, you would use JavaScript to handle form submissions and update the guestbook entries dynamically.
+    document.getElementById("guestForm").addEventListener("submit", function(event) {
+      event.preventDefault();
+
+      // Get form values
+      var name = document.getElementById("name").value;
+      var message = document.getElementById("message").value;
+
+      // Display the new entry
+      var guestList = document.getElementById("guestList");
+      var entry = document.createElement("div");
+      entry.className = "guest-entry";
+      entry.innerHTML = "<strong>" + name + ":</strong> " + message;
+      guestList.appendChild(entry);
+
+      // Clear form fields
+      document.getElementById("name").value = "";
+      document.getElementById("message").value = "";
+    });
+  </script>
+
+</body>
+</html>
