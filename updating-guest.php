@@ -5,21 +5,10 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <script src="bootstrap.min.js"></script> <!-- Corrected the script source to "bootstrap.min.js" -->
     <?php include "Includes/dbconnect.php"; ?>
+    <?php include "Includes/cssfooter.php";?>
 </head>
 <body>
     <?php include "Includes/nav.php"; ?>
-    <style>
-    .footer {
-                background-color: #333; /* Choose your background color */
-                color: white;
-                text-align: center;
-                padding: 10px;
-                position: fixed;
-                bottom: 0;
-                width: 100%;
-    }
-    </style>
-    
     <?php
         if(isset($_GET["id"]) && is_numeric($_GET['id'])) {
             $ID = $_GET['id'];
@@ -70,7 +59,7 @@
             <label><input type="checkbox"> Remember me</label>
         </div>
         
-        <button type="submit" class="btn btn-success">Submit</button>
+        <button type="submit" class="btn btn-success">Update</button>
     </form> 
     <?php
             } else {
@@ -82,4 +71,5 @@
     ?>
 </body>
 <?php include "Includes/footer.php"; ?>
+
 </html>

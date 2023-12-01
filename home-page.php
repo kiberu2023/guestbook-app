@@ -6,9 +6,10 @@
         <script src="js/bootstrap.min.js"></script>
         <style>
             .text {
-                position: relative;
+                position: absolute;
                 text-align: center;
-                color: black; /* Set the text color */
+                color: orangered; 
+                font-size: 20px;
             }
 
             .centered {
@@ -19,21 +20,14 @@
             }
 
             /* Style for the footer */
-            .footer {
-                background-color: #333; /* Choose your background color */
-                color: white;
-                text-align: center;
-                padding: 10px;
-                position: fixed;
-                bottom: 0;
-                width: 100%;
-            }
+            <?php include "Includes/cssfooter.php";?>
+            
         </style>
     </head>
     <body>
         <?php include "Includes/nav.php"; ?>
         <div class="text">
-            <img src="renam/vistor2.jpg" alt="..." height="50%" width="100%">
+            <img src="renam/vistor2.jpg" alt="..." height="100%" width="100%">
             <div class="centered">
                 <h1><b>YOUR WELCOME TO OUR GUESTBOOK DISCOVER STORIES AND SHARE MEMORIES</b></h1>
                 <p><dfn>Join us and explore heartfelt memories, connect with others, celebrate special moments, and leave a lasting impression</dfn></p>
@@ -45,8 +39,6 @@
                 </div>
             </div>
         </div>
-
-        <!-- Footer -->
     </body>
     <?php include "Includes/footer.php"; ?>
 </html>

@@ -1,24 +1,18 @@
 <?php
-    if ($_SERVER["REQUEST_METHOD"] =="POST") {
-        $ID= $_POST["id"];
-        $first_name= $_POST["first_name"];
-        $last_name= $_POST["last_name"];
-        $gender= $_POST["gender"];
-        $email_address= $_POST["email_address"];
-        $telphone_number= $_POST["telphone_number"];
-        $address= $_POST["guest_address"];
+        require_once "dbconnect.php";
+        if(isset($_GET["id"]) && is_numeric($_GET['id'])) {
+            $ID = $_GET['id'];
 
-        include "Includes/dbconnect.php";
-        $query = "DELETE guest_list SET first_name= ?, last_name=?, gender=?,
-         email_address=?, telphone_number=?,guest_address=?, WHERE id=?";
-
-        $stmt=mysqli_prepare($connection,$query);
-
-        mysqli_stmt_bind_param($stmt,"ssssssi", $first_name,$last_name,$gender,$email_address,$telphone_number,$address,$ID);
-        
-        mysqli_stmt_execute($stmt);
-        echo "update was successful";
-        exit();
-
-    }
-?>
+            $query = "DELETE FROM guest_list WHERE id=?";
+            $stmt = mysqli_prepare($connection, $query);
+            mysqli_stmt_bind_param($stmt, "i", $ID);
+            mysqli_stmt_execute($stmt);
+            mysqli_stmt_close($stmt);
+            mysqli_close($connection);
+            header("Location: ../guest-list.php");
+            exit();
+        } else {
+            die("delete query failed.");
+        }
+ 
+    ?>

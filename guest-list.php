@@ -4,21 +4,11 @@
     <title>GUESTLIST</title>
     <?php include "Includes/head.html>"; ?>
 </head>
-<body>
+<body class="background-clolor:red";>
     <div class ="row">
         <?php include "Includes/nav.php";?>
     </div>
-    <style>
-    .footer {
-                background-color: #333; /* Choose your background color */
-                color: white;
-                text-align: center;
-                padding: 10px;
-                position: fixed;
-                bottom: 0;
-                width: 100%;
-    }
-    </style>
+    <?php include "Includes/cssfooter.php";?>
     <table class ="table table-striped table-bordered table-hover" style="margin-top: 3rem;">
         <thead>
             <tr>
@@ -52,12 +42,11 @@
                 echo "<td>" . $row['telphone_number'] . "</td>";
                 echo "<td>" . $row['guest_address'] . "</td>";
                 echo "<td>";
-                echo '<a href="updating-guest.php?id=' . $row['id'] . '" class="btn btn-info">Update</a>';
+                    echo '<a href="updating-guest.php?id=' . $row['id'] . '" class="btn btn-info">Update</a>';
+                    
+                    echo '<a href="Includes/delete_processor.php?id=' . $row['id'] . '">Delete</a>';
                 "</td>";
-                echo "<td>";
-                echo '<a href="delete-guest.php?id=' . $row['id'] . '" class="btn btn-danger">Delete</a>';
-                "</td>";
-                echo '</tr>';
+            echo '</tr>';
             } 
         }
     ?>

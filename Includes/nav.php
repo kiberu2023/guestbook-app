@@ -24,9 +24,6 @@
                 <a class="nav-link" href="updating-guest.php">update</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="delete-guest.php">delete</a>
-              </li>
-              <li class="nav-item">
                 <a class="nav-link" href="add-guest.php">add</a>
               </li>
             </ul>

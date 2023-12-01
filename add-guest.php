@@ -4,20 +4,19 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
         <script src="js/bootstrap.min.js"></script>
+        <?php include "Includes/cssfooter.php";?>
+        <style>
+        body {
+            background-image: url('renam/image1.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            margin: 0;
+        }
+    </style>
 </head>
 <body>
 <?php include "Includes/nav.php";?>
-<style>
-    .footer {
-                background-color: #333; /* Choose your background color */
-                color: white;
-                text-align: center;
-                padding: 10px;
-                position: fixed;
-                bottom: 0;
-                width: 100%;
-    }
-    </style>
     <form action="includes/form_processor.php" method="post" style="margin-top: 5rem;">
         <div class="form-group" style="width: 17rem;">
             <label for="email"> First_Name:</label>
@@ -45,7 +44,7 @@
         <div class="checkbox">
             <label><input type="checkbox"> Remember me</label>
         </div>
-        <button type="submit" class="btn btn-default">Submit</button>
+        <input type="submit" class="btn btn-success" value="submit">
     </form>
 </body>
 <?php include "Includes/footer.php"; ?>

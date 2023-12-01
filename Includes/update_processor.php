@@ -8,7 +8,7 @@
         $telphone_number= $_POST["telphone_number"];
         $address= $_POST["guest_address"];
 
-        include "Includes/dbconnect.php";
+        require_once"/dbconnect.php";
         $query = "UPDATE guest_list SET first_name= ?, last_name=?, gender=?,
          email_address=?, telphone_number=?,guest_address=?, WHERE id=?";
 
@@ -17,7 +17,8 @@
         mysqli_stmt_bind_param($stmt,"ssssssi", $first_name,$last_name,$gender,$email_address,$telphone_number,$address,$ID);
         
         mysqli_stmt_execute($stmt);
-        echo "update was successful";
+        
+        header("Location: ../guest-list.php");
         exit();
 
     }
