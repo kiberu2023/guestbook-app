@@ -44,7 +44,10 @@
         <div class="checkbox">
             <label><input type="checkbox"> Remember me</label>
         </div>
-        <input type="submit" class="btn btn-success" value="submit">
+        <div>
+        <button type="button">Submit</button>
+        </div>
+        
     </form>
 </body>
 <?php include "Includes/footer.php"; ?>

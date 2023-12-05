@@ -40,7 +40,9 @@
             </div>
         </div>
     </body>
+    <div class="row">
     <?php include "Includes/footer.php"; ?>
+    </div>
 </html>
 
 
