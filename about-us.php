@@ -31,6 +31,7 @@
             margin: 0;
             font-family: 'Times New Roman', Times, serif;
             font-size: large;
+            font-weight: bolder;
         }
             .footer {
             display: flex;

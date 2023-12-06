@@ -78,11 +78,11 @@
 
         <button type="submit">Submit</button>
     </form>
-    <h2>Connect with Us</h2>
+    <h2><marquee><i>CONNECT WITH US ON</i></marquee></h2>
     <ul class="social-media-icons">
-    <li><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a></li>
-    <li><a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a></li>
-    <li><a href="https://www.whatsapp.com/" target="_blank"><i class="fab fa-whatsapp"></i></a></li>
+    <li>facebook</li>
+    <li>twitter</li>
+    <li>whatsapp</li>
 </ul>
 
 

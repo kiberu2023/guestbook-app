@@ -4,8 +4,39 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
         <script src="js/bootstrap.min.js"></script>
         <?php include "Includes/cssfooter.php";?>
+        <style>
+            .footer {
+                display: flex;
+                justify-content: space-between;
+                align-items: left;
+            }
+
+            .footer ul {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                display: flex;
+            }
+
+            .footer li {
+                margin-right: 15px;
+            }
+
+            .footer p {
+                margin: 0;
+                font-size: x-large;
+            }
+            body {
+            background-image: url('renam/image1.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            margin: 0;
+        }
+        </style>
 </head>
 <body>
+<?php include "Includes/nav.php";?>
     <form action="includes/profile_form_processor.php" enctype="multipart/form-data" method="post" style="margin-top: 5rem;">
         <div class="form-group" style="width: 17rem;">
             <label for="email">Name:</label>

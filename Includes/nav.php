@@ -23,6 +23,9 @@
               <li class="nav-item">
                 <a class="nav-link" href="add-guest.php">add_guest</a>
               </li>
+              <li class="nav-item">
+                <a class="nav-link" href="profile2.php">Guest_profile</a>
+              </li>
             </ul>
             <form class="d-flex" role="search">
               <input class="form-control me-2" type="search" placeholder="Search Here" aria-label="Search">
