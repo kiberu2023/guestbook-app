@@ -13,11 +13,33 @@
             background-attachment: fixed;
             margin: 0;
         }
-    </style>
+    .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+}
+
+.footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.footer li {
+    margin-right: 15px;
+}
+
+.footer p {
+    margin: 0;
+    font-size: x-large;
+    font-style: oblique;
+}
+</style>
 </head>
 <body>
 <?php include "Includes/nav.php";?>
-    <form action="includes/form_processor.php" method="post" style="margin-top: 5rem;">
+    <form action="Includes/form_processor.php" method="post" style="margin-top: 5rem;">
         <div class="form-group" style="width: 17rem;">
             <label for="email"> First_Name:</label>
             <input type="text" class="form-control" name="first_name" placeholder="first_name">
@@ -45,7 +67,7 @@
             <label><input type="checkbox"> Remember me</label>
         </div>
         <div>
-        <button type="button">Submit</button>
+        <button type="submit">Submit</button>
         </div>
         
     </form>

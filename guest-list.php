@@ -3,11 +3,41 @@
 <head>
     <title>GUESTLIST</title>
     <?php include "Includes/head.html>"; ?>
+    <style>
+    .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+}
+
+.footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.footer li {
+    margin-right: 3px;
+}
+
+.footer p {
+    margin: 5;
+    font-size: x-large;
+}
+.body {
+    font-weight: 900;
+    display: flexbox;
+    border-radius: 0cap;
+    font-weight: bolder;
+    background-color: brown;
+
+}
+</style>
 </head>
 <body class="background-clolor:red";>
+<?php include "Includes/nav.php";?>
     <div class ="row">
-        <?php include "Includes/nav.php";?>
-    </div>
     <?php include "Includes/cssfooter.php";?>
     <table class ="table table-striped table-bordered table-hover" style="margin-top: 3rem;">
         <thead>

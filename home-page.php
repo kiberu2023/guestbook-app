@@ -8,8 +8,10 @@
             .text {
                 position: absolute;
                 text-align: center;
-                color: orangered; 
+                color:red; 
                 font-size: 20px;
+                font-weight: bolder;
+                font-size:xx-large;
             }
 
             .centered {
@@ -20,7 +22,27 @@
             }
 
             /* Style for the footer */
-            <?php include "Includes/cssfooter.php";?>
+                .footer {
+                display: flex;
+                justify-content: space-between;
+                align-items: left;
+            }
+
+            .footer ul {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                display: flex;
+            }
+
+            .footer li {
+                margin-right: 15px;
+            }
+
+            .footer p {
+                margin: 0;
+                font-size: x-large;
+            }
             
         </style>
     </head>
@@ -29,20 +51,12 @@
         <div class="text">
             <img src="renam/vistor2.jpg" alt="..." height="100%" width="100%">
             <div class="centered">
-                <h1><b>YOUR WELCOME TO OUR GUESTBOOK DISCOVER STORIES AND SHARE MEMORIES</b></h1>
+                <h1><b><marquee direction="left">YOUR WELCOME TO OUR GUESTBOOK DISCOVER STORIES AND SHARE MEMORIES</marquee></b></h1>
                 <p><dfn>Join us and explore heartfelt memories, connect with others, celebrate special moments, and leave a lasting impression</dfn></p>
             </div>
         </div>
-        <div class="row">
-            <div class="col-lg-11">
-                <div class="centered">
-                </div>
-            </div>
-        </div>
     </body>
-    <div class="row">
     <?php include "Includes/footer.php"; ?>
-    </div>
 </html>
 
 

@@ -10,7 +10,7 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="home-page.php">Home</a>
+                <a class="nav-link"  href="home-page.php">Home</a>
               </li>
 
               <li class="nav-item">
@@ -21,10 +21,7 @@
                 <a class="nav-link" href="about-us.php">about</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="updating-guest.php">update</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="add-guest.php">add</a>
+                <a class="nav-link" href="add-guest.php">add_guest</a>
               </li>
             </ul>
             <form class="d-flex" role="search">

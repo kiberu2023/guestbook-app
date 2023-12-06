@@ -5,7 +5,29 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <script src="bootstrap.min.js"></script> <!-- Corrected the script source to "bootstrap.min.js" -->
     <?php include "Includes/dbconnect.php"; ?>
-    <?php include "Includes/cssfooter.php";?>
+    <style>
+    .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+}
+
+.footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.footer li {
+    margin-right: 15px;
+}
+
+.footer p {
+    margin: 0;
+    font-size: x-large;
+}
+</style>
 </head>
 <body>
     <?php include "Includes/nav.php"; ?>
@@ -71,5 +93,4 @@
     ?>
 </body>
 <?php include "Includes/footer.php"; ?>
-
 </html>
